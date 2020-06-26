@@ -20,6 +20,10 @@ jobs:
           yarn production
       - name: stage, commit, fetch, push
         run: |
+          git config --local user.name "viandwi24"
+          git config --local user.email "fiandwi0424@gmail.com"
+          git remote set-url origin ${{ secrets.ssh }}
+          git status
           git add .
           git commit -m "[AUTO:BUILD] build main.js"
           git fetch origin master
