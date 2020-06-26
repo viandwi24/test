@@ -18,3 +18,9 @@ jobs:
       - name: Run Webpack Build
         run: |
           yarn production
+      - name: stage, commit, fetch, push
+        run: |
+          git add .
+          git commit -m "[AUTO:BUILD] build main.js"
+          git fetch origin master
+          git push origin HEAD:master
