@@ -1,4 +1,7 @@
 {
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
   "dependencies": {
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
@@ -6,5 +9,7 @@
   "scripts": {
     "dev": "node_modules/webpack/bin/webpack.js --mode development --watch",
     "production": "node_modules/webpack/bin/webpack.js --mode production"
-  }
+  },
+  "author": "viandwi24",
+  "license": "MIT"
 }
